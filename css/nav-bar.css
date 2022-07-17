@@ -1,0 +1,70 @@
+.nav-bar-container{
+    border-color: black;
+    height: 70px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-sign-in{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gray;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.img-chipotle{
+    margin-right: 20px;
+}
+.nav-sign-in:hover{
+    cursor: pointer;
+}
+.nav-items{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.nav-items ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: #451400;
+}
+.nav-items ul li a:hover{
+    text-decoration: none;
+    color: #7c2300;
+}
+.nav-order-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.find-a-chipotle{
+    background-color: #451400;
+    border-radius: 35px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 25px 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    margin-right: 25px;
+    
+}
+.find-a-chipotle:hover{
+    background-color: #7c2300;
+}
+
+.chipotle-pepper{
+    width: 30px;
+}
