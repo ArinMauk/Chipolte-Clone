@@ -1,0 +1,50 @@
+.menu-content {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.menu-item {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.menu-item:hover .order {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b68207;
+    opacity: 1;
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+
+.menu-item p {
+    text-align: center;
+    font-weight: 700;
+    color: #451400;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+.menu-item img {
+    width: 300px;
+}
+
+.order {
+    opacity: 0;
+
+
+}
