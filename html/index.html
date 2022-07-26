@@ -9,7 +9,34 @@
     <link href="../css/promo-banner.css" rel="stylesheet">
     <link href="../css/loyalty-sign-in.css" rel="stylesheet">
     <link href="../css/menu-items.css" rel="stylesheet">
-    
+    <style>
+        .bottom-promos{
+            display: grid;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .promo-1, .promo-2{
+            margin: 0px 5px;
+            padding: 10px 10px;
+            width: 300px;
+            border: 1px solid lightgray;
+            position: static;
+        }
+
+        .promo-1 h1, .promo-1 p, .promo-1 button, 
+        .promo-2 h1, .promo-2 p, .promo-2 button{
+            display: block;
+            margin-top: 0px;
+        }
+        .bottom-promo-video{
+            position: absolute;
+            height: 50%
+        }
+
+    </style>
 </head>
 
 <body>
@@ -109,6 +136,22 @@
         </div>
     </div>
     <!--End Menu Options-->
+
+    <!-- Bottom Page Promos-->
+    <div class="bottom-promos">
+        <div class="promo-1">
+            <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
+            <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
+            <button>PLAY NOW</button>
+            <video class="bottom-promo-video" autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/misc--pages/national-avocado-day-2022/NAD_SecondaryTout_BuyTheDip_DSK.mp4" ></video>
+        </div>
+        <div class="promo-2">
+            <h1>OUR COMMITMENT TO LOCAL IS REAL</h1>
+            <p>We purchased over 35 million pounds of local produce from local farmers last year because we know fresh, real ingredients just taste better.</p>
+            <button>ORDER PICKUP</button>
+            <video class="bottom-promo-video"autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu-items/fajitas/CHP_BrandCampaign_ST_VEG_DESKTOP.mp4" ></video>
+        </div>
+    </div>
 </body>
 
 </html>
