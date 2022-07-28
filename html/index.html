@@ -15,24 +15,38 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: center;
+            border: 1px solid lightblue;
         }
 
         .promo-1, .promo-2{
-            margin: 0px 5px;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            border: 1px solid lightpink;
+            /* margin: 0px 5px;
             padding: 10px 10px;
             width: 300px;
             border: 1px solid lightgray;
-            position: static;
+            position: static; */
         }
 
-        .promo-1 h1, .promo-1 p, .promo-1 button, 
+        .promo-img{
+            border: 5px solid lightgreen;
+
+        }
+
+        /* .promo-1 h1, .promo-1 p, .promo-1 button, 
         .promo-2 h1, .promo-2 p, .promo-2 button{
             display: block;
             margin-top: 0px;
-        }
+        } */
         .bottom-promo-video{
-            position: absolute;
-            height: 50%
+            margin: 0px;
+            padding: 0px;
+            max-width: 100%;
         }
 
     </style>
@@ -139,6 +153,28 @@
     <!-- Bottom Page Promos-->
     <div class="bottom-promos">
         <div class="promo-1">
+            <div class="promo-text">
+                <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
+                <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
+                <button>PLAY NOW</button>
+            </div>
+            <div class="promo-img">
+                <video class="bottom-promo-video" autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/misc--pages/national-avocado-day-2022/NAD_SecondaryTout_BuyTheDip_DSK.mp4" ></video>
+            </div>
+        </div>
+
+        <div class="promo-2">
+            <div class="promo-text">
+                <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
+                <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
+                <button>PLAY NOW</button>
+            </div>
+            <div class="promo-img">
+                
+            </div>
+        </div>
+
+        <!-- <div class="promo-1">
             <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
             <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
             <button>PLAY NOW</button>
@@ -149,8 +185,9 @@
             <p>We purchased over 35 million pounds of local produce from local farmers last year because we know fresh, real ingredients just taste better.</p>
             <button>ORDER PICKUP</button>
             <video class="bottom-promo-video"autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu-items/fajitas/CHP_BrandCampaign_ST_VEG_DESKTOP.mp4" ></video>
-        </div>
+        </div> -->
     </div>
+    <!-- End Bottom Page Promos -->
 </body>
 
 </html>
