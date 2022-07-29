@@ -1,0 +1,52 @@
+.bottom-promos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.promo-1, .promo-2{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 500px;
+    border: 1px solid lightgrey;
+}
+
+.promo-1{
+    margin-right: 25px;
+}
+.promo-text{
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 0px;
+}
+
+.promo-text h1{
+    color: rgb(69, 20, 0);
+}
+
+.promo-text p {
+    font-size: 18px;
+}
+
+.promo-text button {
+    background-color: rgb(69, 20, 0);
+    color: white;
+    padding: 8px 70px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.promo-text button:hover {
+    cursor: pointer;
+}
+
+.bottom-promo-video{
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
