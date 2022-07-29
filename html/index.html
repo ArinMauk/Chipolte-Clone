@@ -15,34 +15,48 @@
             flex-direction: row;
             align-items: flex-start;
             justify-content: center;
-            border: 1px solid lightblue;
         }
 
         .promo-1, .promo-2{
 
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             width: 500px;
-            border: 1px solid lightpink;
-            /* margin: 0px 5px;
-            padding: 10px 10px;
-            width: 300px;
-            border: 1px solid lightgray;
-            position: static; */
+            border: 1px solid lightgrey;
         }
 
-        .promo-img{
-            border: 5px solid lightgreen;
-
+        .promo-1{
+            margin-right: 25px;
         }
-
-        /* .promo-1 h1, .promo-1 p, .promo-1 button, 
-        .promo-2 h1, .promo-2 p, .promo-2 button{
-            display: block;
+        .promo-text{
+            width: 100%;
+            padding: 0px 0px 0px 10px;
             margin-top: 0px;
-        } */
+        }
+
+        .promo-text h1{
+            color: rgb(69, 20, 0);
+        }
+
+        .promo-text p {
+            font-size: 18px;
+        }
+
+        .promo-text button {
+            background-color: rgb(69, 20, 0);
+            color: white;
+            padding: 8px 70px;
+            border: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .promo-text button:hover {
+            cursor: pointer;
+        }
+
         .bottom-promo-video{
             margin: 0px;
             padding: 0px;
@@ -165,27 +179,14 @@
 
         <div class="promo-2">
             <div class="promo-text">
-                <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
-                <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
+                <h1>OUR COMMITMENT TO LOCAL IS REAL</h1>
+                <p>We purchased over 35 million pounds of local produce from local farmers last year because we know fresh, real ingredients just taste better.</p>
                 <button>PLAY NOW</button>
             </div>
             <div class="promo-img">
-                
+                <video class="bottom-promo-video"autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu-items/fajitas/CHP_BrandCampaign_ST_VEG_DESKTOP.mp4" ></video>
             </div>
         </div>
-
-        <!-- <div class="promo-1">
-            <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
-            <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
-            <button>PLAY NOW</button>
-            <video class="bottom-promo-video" autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/misc--pages/national-avocado-day-2022/NAD_SecondaryTout_BuyTheDip_DSK.mp4" ></video>
-        </div>
-        <div class="promo-2">
-            <h1>OUR COMMITMENT TO LOCAL IS REAL</h1>
-            <p>We purchased over 35 million pounds of local produce from local farmers last year because we know fresh, real ingredients just taste better.</p>
-            <button>ORDER PICKUP</button>
-            <video class="bottom-promo-video"autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu-items/fajitas/CHP_BrandCampaign_ST_VEG_DESKTOP.mp4" ></video>
-        </div> -->
     </div>
     <!-- End Bottom Page Promos -->
 </body>
