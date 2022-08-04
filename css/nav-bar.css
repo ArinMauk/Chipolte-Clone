@@ -16,6 +16,16 @@
     margin-left: 10px;
     margin-top: 10px;
 }
+
+.nav-sign-in div{
+    padding-right: 10px;
+
+}
+.nav-sign-in h3{
+    padding-left: 10px;
+    border-left: 2px solid lightgrey;
+    color:#451400
+}
 .img-chipotle{
     margin-right: 20px;
 }
