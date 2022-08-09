@@ -1,0 +1,128 @@
+.nav-items {
+    border: 2px solid lightblue;
+}
+
+.nav-bar-container-order {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 25px;
+}
+
+.order-build-description {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: 1px solid lightgrey;
+}
+
+.order-build-details {
+    width: 650px;
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+
+.order-build-details p,
+.order-build-details h1 {
+    color: #451400;
+    padding: 0px;
+    margin: 0px;
+}
+
+.order-build-details h1 {
+    font-size: 50px;
+
+}
+
+.order-build-details h4 {
+    color: #786259;
+    padding: 0px;
+    margin: 0px;
+}
+
+.order-build-description img {
+    padding: 0px;
+    max-width: 550px;
+}
+
+.protein-selection,
+.rice-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 20px;
+}
+
+.item-grid-titles{
+    grid-column: 1 / span 2;
+
+}
+
+.item-grid-titles h1{
+    color:#451400;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.item-grid-titles p{
+    color: #786259;
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 450px;
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+}
+
+.item:hover{
+    cursor: pointer;
+    border-color: black;
+}
+.item img {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    max-width: 125px;
+}
+
+.item-new {
+    display: inline-block;
+    padding: 3px 5px;
+    margin: 0;
+    border-radius: 5px;
+    background-color: #451400;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+}
+.item-name{
+    padding: 0;
+    margin: 0;
+    color: #451400;
+    font-weight: bold;
+    font-size: 26px;
+}
+.item-price{
+    color: #786259;
+    font-weight: bold;
+    margin: 0;
+}
+.item-price span{
+    padding-left: 15px;
+}

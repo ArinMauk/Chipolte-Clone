@@ -3,18 +3,12 @@
 
 <head>
     <title>Build Chipotle Order</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700,500,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700,500,300&display=swap"
+        rel="stylesheet">
     <link href="../css/nav-bar.css" rel="stylesheet">
     <link href="../css/general.css" rel="stylesheet">
-    <style>
-        .nav-items{
-            border: 2px solid lightblue;
-        }
-        .nav-bar-container-order{
-            border-bottom: 1px solid lightgrey;
-            padding-bottom: 25px;
-        }
-    </style>
+    <link href="../css/build-order.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -42,32 +36,180 @@
     <div class="order-build-description">
         <img src="../imgs/burrito.png">
         <div class="order-build-details">
-
+            <h4>BUILD YOUR</h4>
+            <h1>BURRITO</h1>
+            <p>Your choice of freshly grilled meat or sofritas wrapped in a warm flour tortilla with rice, beans, or
+                fajita veggies, and topped with guac, salsa, queso blanco, sour cream or cheese.</p>
         </div>
     </div>
     <!--End Menu Item Description Section-->
 
     <!--Start Protein and Veggie Selection-->
-    <div>
+    <div class="protein-veggie-container">
+
+        <div class="protein-selection">
+            <div class="item-grid">
+                <div class="item-grid-titles">
+                    <h1>PROTEIN OR VEGGIE</h1>
+                    <p>Choose up to Two</p>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/pollo-asado-order.png">
+                    <div class="item-details">
+                        <p class="item-new">NEW</p>
+                        <p class="item-name">POLLO ASADO</p>
+                        <p class="item-price">$9.50 <span>210 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/chicken-order.png">
+                    <div class="item-details">
+                        <p class="item-name">CHICKEN</p>
+                        <p class="item-price">$8.85 <span>180 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/steak-order.png">
+                    <div class="item-details">
+                        <p class="item-name">STEAK</p>
+                        <p class="item-price">$10.60 <span>150 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/barbacoa-order.png">
+                    <div class="item-details">
+                        <p class="item-name">BARBACOA</p>
+                        <p class="item-price">$10.60 <span>170 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/carnitas-order.png">
+                    <div class="item-details">
+                        <p class="item-name">CARNITAS</p>
+                        <p class="item-price">$9.50 <span>210 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/sofritas-order.png">
+                    <div class="item-details">
+                        <p class="item-name">SOFRITAS</p>
+                        <p class="item-price">$8.85 <span>150 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/veggie-order.png">
+                    <div class="item-details">
+                        <p class="item-name">VEGGIE</p>
+                        <p class="item-price">$8.85 <span>0 cal</span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
     <!--End Protein and Veggie Selection-->
 
     <!--Start Rice selection -->
-    <div>
+    <div class="rice-container">
+        <div class="rice-selection">
+            <div class="item-grid">
+                <div class="item-grid-titles">
+                    <h1>RICE</h1>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/white-rice-order.png">
+                    <div class="item-details">
+                        <p class="item-name">WHTIE RICE</p>
+                        <p class="item-price"><span>210 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/brown-rice-order.png">
+                    <div class="item-details">
+                        <p class="item-name">BROWN RICE</p>
+                        <p class="item-price"><span>210 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/no-selection.svg">
+                    <div class="item-details">
+                        <p class="item-name">NO RICE</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </div>
     <!--End Rice Selection-->
 
     <!--Start Beans Selection-->
-    <div>
+    <div class="beans-container">
+        <div class="rice-selection">
+            <div class="item-grid">
+                <div class="item-grid-titles">
+                    <h1>BEANS</h1>
+                </div>
 
+                <div class="item">
+                    <img src="../imgs/black-beans-order.png">
+                    <div class="item-details">
+                        <p class="item-name">BLACK BEANS</p>
+                        <p class="item-price"><span>130 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/pinto-beans-order.png">
+                    <div class="item-details">
+                        <p class="item-name">PINTO BEANS</p>
+                        <p class="item-price"><span>130 cal</span></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../imgs/no-selection.svg">
+                    <div class="item-details">
+                        <p class="item-name">NO BEANS</p>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
     <!--End Beans Selection-->
 
     <!--Start Top things off selection-->
-    <div>
+    <div class="top-things-off-container">
+        <h2>Top Things Off</h2>
+        <div class="item-selection">
+            <div class="item-grid">
+                <div>Guacamole</div>
+                <div>Fresh Tomato Salsa</div>
+                <div>Roasted Chili-corn Salsa</div>
+                <div>Tomatillo-green Chili Salsa</div>
+                <div>Tomatillo-red chili Salsa</div>
+                <div>Sour Cream</div>
+                <div>Fajita Veggies</div>
+                <div>Cheese</div>
+                <div>Romaine Lettuce</div>
+                <div>Queso Blanco</div>
 
+            </div>
+        </div>
     </div>
     <!--End Top Things off selection-->
 
