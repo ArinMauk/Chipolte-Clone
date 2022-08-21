@@ -1,11 +1,17 @@
 .nav-bar-container{
     border-color: black;
-    height: 70px;
-    border-width: 1px;
+    height: 110px;
+    border-bottom: 1px solid lightgray;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-sign-in{

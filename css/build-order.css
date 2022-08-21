@@ -4,7 +4,7 @@
 
 .nav-bar-container-order {
     border-bottom: 1px solid lightgrey;
-    padding-bottom: 25px;
+   
 }
 
 .order-build-description {
@@ -15,6 +15,7 @@
     align-items: center;
     margin: auto;
     border-bottom: 1px solid lightgrey;
+    position: relative;
 }
 
 .order-build-details {
@@ -47,8 +48,7 @@
     max-width: 550px;
 }
 
-.protein-selection,
-.rice-selection {
+.food-selection{
     display: flex;
     flex-direction: column;
     align-items: center;
