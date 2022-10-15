@@ -1,6 +1,7 @@
 .menu-content {
     display: flex;
     justify-content: center;
+    top: 0;
 }
 
 .menu-items {

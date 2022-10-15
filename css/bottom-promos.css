@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    top: 0;
 }
 
 .promo-1, .promo-2{
