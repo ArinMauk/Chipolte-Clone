@@ -1,86 +1,300 @@
-.nav-bar-container{
-    border-color: black;
-    height: 110px;
-    border-bottom: 1px solid lightgray;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 5;
-    background-color: white;
-    top: 0;
-    left: 0;
-    right: 0;
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (min-width: 400px) {
+    #mobile-nav-bar{
+        display: none;
+        position: fixed;
+        z-index: 6;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    #mobile-nav-bar div p{
+        text-align: center;
+        padding: 15px 100px;
+        color: #451400;
+        font-weight: 800;
+        font-size: 24px;
+    }
+    .create-account-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .create-account-btn button{
+        border: 1px solid #451400;
+        background-color: #451400;
+        color: white;
+        font-weight: bold;
+        font-size: large;
+        padding: 15px 100px;
+    }
+
+    .create-account-btn :hover{
+        background-color: #581900;
+        cursor: pointer;
+    }
+
+    #desktop-nav-bar{
+        display: none;
+    }
+    .hamburger-icon{
+        font-size:30px;
+        cursor:pointer;
+        position: absolute;
+    }
+
+    .closebtn{
+        float: right;
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #000000;
+        display: block;
+        position: relative;
+        transition: 0.3s;
+    }
+    .nav-bar-container{
+        border-color: black;
+        height: 110px;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 5;
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-sign-in{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        color: gray;
+        margin-left: 40px;
+        margin-top: 10px;
+    }
+
+    .nav-sign-in div{
+        padding-right: 10px;
+
+    }
+    .nav-sign-in h3{
+        padding-left: 10px;
+        border-left: 2px solid lightgrey;
+        color:#451400
+    }
+    .img-chipotle{
+        margin-right: 20px;
+    }
+    .nav-sign-in:hover{
+        cursor: pointer;
+    }
+    .nav-items{
+        margin-top: 5px;
+    }
+
+    .nav-items ul {
+        background-color: rgb(241, 241, 241);
+        margin-top: 50px;
+        padding: 5px;
+        border: solid 1px rgb(201, 201, 201);
+    }
+
+    .nav-items ul li{
+        display: block;
+        margin: 20px 10px;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .nav-items ul li a{
+        text-decoration: none;
+        color: #451400;
+    }
+    .nav-items ul li a:hover{
+        text-decoration: none;
+        color: #7c2300;
+    }
+    .nav-order-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 35px;
+    }
+
+    .find-a-chipotle{
+        background-color: #451400;
+        border-radius: 35px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 25px 5px 10px;
+        font-size: 15px;
+        text-decoration: none;
+        margin-right: 25px;
+        
+    }
+    .find-a-chipotle:hover{
+        background-color: #7c2300;
+    }
+
+    .chipotle-pepper{
+        width: 30px;
+    }
+  }     
+
+
+     /* Extra large devices (large laptops and desktops, 1300px and up) */
+  @media only screen and (min-width: 1000px) {
+    .hamburger-icon{
+        display: none;
+    }
+
+    #desktop-nav-bar{
+        display: block;
+    }
+
+    .nav-bar-container{
+        border-color: black;
+        height: 110px;
+        border-bottom: 1px solid lightgray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 5;
+        background-color: white;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-sign-in{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: gray;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    .nav-sign-in div{
+        padding-right: 10px;
+
+    }
+    .nav-sign-in h3{
+        padding-left: 10px;
+        border-left: 2px solid lightgrey;
+        color:#451400
+    }
+    .img-chipotle{
+        margin-right: 20px;
+    }
+    .nav-sign-in:hover{
+        cursor: pointer;
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-items ul {
+        background-color: white;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+        border: none;
+    }
+
+    .nav-items ul li{
+        display: inline-block;
+        margin: 0px 5px;
+        font-weight: 800;
+        font-size: 13px;
+        
+    }
+    .nav-items ul li a{
+        text-decoration: none;
+        color: #451400;
+    }
+    .nav-items ul li a:hover{
+        text-decoration: none;
+        color: #7c2300;
+    }
+    .nav-order-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 35px;
+    }
+
+    .find-a-chipotle{
+        background-color: #451400;
+        border-radius: 35px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 25px 5px 10px;
+        font-size: 15px;
+        text-decoration: none;
+        margin-right: 25px;
+        
+    }
+    .find-a-chipotle:hover{
+        background-color: #7c2300;
+    }
+
+    .chipotle-pepper{
+        width: 30px;
+    }
 }
 
-.nav-sign-in{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: gray;
-    margin-left: 10px;
-    margin-top: 10px;
-}
+   /* Extra large devices (large laptops and desktops, 1225px and up) */
+   @media only screen and (min-width: 1100px) {
+        .nav-items ul li{
+            display: inline-block;
+            margin: 0px 8px;
+            font-weight: 700;
+            font-size: 18px;
+            
+        }
 
-.nav-sign-in div{
-    padding-right: 10px;
+    }
 
-}
-.nav-sign-in h3{
-    padding-left: 10px;
-    border-left: 2px solid lightgrey;
-    color:#451400
-}
-.img-chipotle{
-    margin-right: 20px;
-}
-.nav-sign-in:hover{
-    cursor: pointer;
-}
-.nav-items{
-    margin-top: 5px;
-    margin-left: 5px;
-}
-.nav-items ul li{
-    display: inline-block;
-    margin: 0px 10px;
-    font-weight: 700;
-    font-size: 22px;
-    
-}
-.nav-items ul li a{
-    text-decoration: none;
-    color: #451400;
-}
-.nav-items ul li a:hover{
-    text-decoration: none;
-    color: #7c2300;
-}
-.nav-order-icon{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 35px;
-}
+   /* Extra large devices (large laptops and desktops, 1225px and up) */
+   @media only screen and (min-width: 1225px) {
+        .nav-items ul li{
+            display: inline-block;
+            margin: 0px 10px;
+            font-weight: 700;
+            font-size: 22px;
+            
+        }
 
-.find-a-chipotle{
-    background-color: #451400;
-    border-radius: 35px;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 5px 25px 5px 10px;
-    font-size: 15px;
-    text-decoration: none;
-    margin-right: 25px;
-    
-}
-.find-a-chipotle:hover{
-    background-color: #7c2300;
-}
+    }
 
-.chipotle-pepper{
-    width: 30px;
-}
+    /* Extra large devices (large laptops and desktops, 1225px and up) */
+   @media only screen and (min-width: 1400px) {
+        .nav-items ul li{
+            display: inline-block;
+            margin: 0px 20px;
+            font-weight: 700;
+            font-size: 24px;
+            
+        }
+
+
+    }
+  
