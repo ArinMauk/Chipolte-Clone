@@ -1,44 +1,130 @@
-.promo-banner{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 450px;
-    top: 20px;
-    right: 0px;
-    left: 0px;
-    z-index: 1;
+@media only screen and (min-width: 400px) {
+    .promo-banner{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        height: auto;
+        top: 100px;
+        right: 0px;
+        left: 0px;
+        z-index: 1;
+        
+    }
+    .background-video{
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 5;
+    }
+    .promo-description{
+        position: absolute;
+        color: white;
+        width: 300px;
+        text-align: center;
+        font-size: 10px;
+        bottom: 30px;
+        font-weight: 600;
+        z-index: 10;
+    }
+    .order-now-btn{
+        position: absolute;
+        background-color: rgb(173, 33, 24);
+        color: white;
+        border: none;
+        padding: 5px 80px;
+        font-weight: 700;
+        font-size: 12px;
+        bottom: 10px;
+        z-index: 10;
+    
+    }
+    
+    .order-now-btn:hover{
+        cursor: pointer;
+    }
 }
-.background-video{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 5;
-}
-.promo-description{
-    position: absolute;
-    color: white;
-    width: 500px;
-    text-align: center;
-    font-size: 25px;
-    bottom: 100px;
-    font-weight: 300;
-    z-index: 10;
-}
-.order-now-btn{
-    position: absolute;
-    background-color: rgb(173, 33, 24);
-    color: white;
-    border: none;
-    padding: 15px 90px;
-    font-weight: 700;
-    font-size: 16px;
-    bottom: 60px;
-    z-index: 10;
+
+ @media only screen and (min-width: 730px) {
+    .promo-description{
+        font-size: 12px;
+        bottom: 40px;
+    }
+
+    .order-now-btn{
+        padding: 10px 90px;
+        font-size: 12px;
+    }
 
 }
 
-.order-now-btn:hover{
-    cursor: pointer;
+@media only screen and (min-width: 930px) {
+    .promo-description{
+        bottom: 50px;
+    }
+
+    .order-now-btn{
+        padding: 10px 90px;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-width: 1030px) {
+    .promo-description{
+        font-size: 14px;
+        width: 400px;
+        bottom: 60px;
+    }
+
+    .order-now-btn{
+        padding: 15px 100px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1230px) {
+    .promo-description{
+        font-size: 16px;
+        width: 450px;
+        bottom: 70px;
+    }
+
+    .order-now-btn{
+        padding: 15px 160px;
+        font-size: 14px;
+        bottom: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 1430px) {
+    .promo-description{
+        font-size: 16px;
+        width: 500px;
+        bottom: 80px;
+    }
+
+    .order-now-btn{
+        padding: 15px 180px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1630px) {
+    .promo-description{
+        font-size: 18px;
+        width: 650px;
+        bottom: 100px;
+    }
+
+    .order-now-btn{
+        padding: 15px 200px;
+        font-size: 14px;
+        bottom: 30px;
+    }
+
 }

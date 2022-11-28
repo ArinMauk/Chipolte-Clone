@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Chipotle Clone</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@700,500,300&display=swap"
         rel="stylesheet">
     <link href="../css/nav-bar.css" rel="stylesheet">
@@ -12,19 +13,67 @@
     <link href="../css/bottom-promos.css" rel="stylesheet">
     <link href="../css/crowd-pleasers.css" rel="stylesheet">
     <link href="../css/footer.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 
 <body>
 
+    
     <!-- Navigation Bar-->
     <div class="nav-bar-container">
 
+        <!-- Sign In Modal-->
+        <div id="sign-in" class="sign-in-modal">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeSignIn()">&times;</a>
+            <h1>SIGN IN</h1>
+            <form action="/sign_in.php" id="sign-in-form">
+                <input class="sign-in-email" type="text" placeholder="Email" name="email" required>
+                <input class="sign-in-password" type="password" placeholder="Password" name="psw" required>
+                <input class="sign-in-remember-me" type="checkbox" name="rememberMe">
+                <label for="rememberMe">Remember Me</label>
+                <a class="sign-in-forgot-password" href="#">Forgot Password?</a>
+                <button class="form-button login-button" type="submit" value="sign-in">SIGN IN</button>
+            </form>
+            <hr>
+            
+            <h2>NOT A MEMBER?</h2>
+            <h3>JOIN REWARDS. GET REWARDED</h3>
+            <button class="form-button create-account-button">CREATE AN ACCOUNT</button>
+
+
+        </div>
+        <!-- Sign In Modal End-->
+
+        <!-- Navigation Bar Mobile-->
+        <div id="mobile-nav-bar" class="nav-items">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="#">ORDER</a></li>
+                <li><a href="#">CATERING</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">OUR VALUES</a></li>
+                <li><a href="#">NUTRITION</a></li>
+            </ul>
+
+            <div>
+                <p>EARN POINTS, COMPLETE CHALLENGES, AND REDEEM REWARDS</p>
+            </div>
+            <div class="create-account-btn">
+                <button >CREATE AN ACCOUNT</button>
+            </div>
+            </div>
+
+        <div class="hamburger-icon" onclick="openNav()">&#9776; </div>
+        <!-- Navigation Bar Mobile End-->
+
+        <!-- Navigation Bar Tablets/Desktop-->
         <div class="nav-sign-in">
             <img class="img-chipotle" src="../imgs/chipotle-logo.svg">
             <img class="img-user-icon" src="../imgs/user-outline.svg">
-            <div>SIGN IN</div>
+            <div onclick="openSignIn()">SIGN IN</div>
         </div>
-        <div class="nav-items">
+        <div id="desktop-nav-bar" class="nav-items">
             <ul>
                 <li><a href="#">ORDER</a></li>
                 <li><a href="#">CATERING</a></li>
@@ -41,6 +90,7 @@
             </a>
             <img class="bag-icon" src="../imgs/bag.svg">
         </div>
+        <!-- End Navigation Bar Tablets/Desktop-->
     </div>
     <!-- End Navigation Bar-->
 
@@ -206,6 +256,26 @@
         </div>
     </div>
     <!--End Footer-->
+
+    <script>
+        function openNav() {
+          document.getElementById("mobile-nav-bar").style.display = "block";
+        }
+        
+        function closeNav() {
+          document.getElementById("mobile-nav-bar").style.display = "none";
+        }
+
+        function openSignIn() {
+            document.getElementById("sign-in").style.display = "flex";
+        }
+
+        function closeSignIn() {
+            document.getElementById("sign-in").style.display = "none";
+        }
+
+
+        </script>
 
 </body>
 
