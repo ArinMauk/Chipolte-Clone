@@ -17,7 +17,7 @@
       <img class="img-chipotle" src="../imgs/chipotle-logo.svg">
       <img class="img-user-icon" src="../imgs/user-outline.svg">
       <div>SIGN IN</div>
-      <h3><a href="./index.html">RETURN TO MENU</a></h3>
+      <h3><a href="../html/index.html">RETURN TO MENU</a></h3>
     </div>
 
     <div class="nav-order-icon">
