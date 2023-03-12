@@ -1,10 +1,12 @@
-.nav-items {
-    border: 2px solid lightblue;
-}
-
 .nav-bar-container-order {
     border-bottom: 1px solid lightgrey;
    
+}
+
+.nav-bar-container-order .nav-sign-in h3 a{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
 }
 
 .order-build-description {

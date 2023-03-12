@@ -19,7 +19,7 @@
 
 <body>
 
-    
+
     <!-- Navigation Bar-->
     <div class="nav-bar-container">
 
@@ -60,9 +60,9 @@
                 <p>EARN POINTS, COMPLETE CHALLENGES, AND REDEEM REWARDS</p>
             </div>
             <div class="create-account-btn">
-                <button >CREATE AN ACCOUNT</button>
+                <button>CREATE AN ACCOUNT</button>
             </div>
-            </div>
+        </div>
 
         <div class="hamburger-icon" onclick="openNav()">&#9776; </div>
         <!-- Navigation Bar Mobile End-->
@@ -75,7 +75,7 @@
         </div>
         <div id="desktop-nav-bar" class="nav-items">
             <ul>
-                <li><a href="#">ORDER</a></li>
+                <li><a href="#order-selection">ORDER</a></li>
                 <li><a href="#">CATERING</a></li>
                 <li><a href="#">REWARDS</a></li>
                 <li><a href="#">OUR VALUES</a></li>
@@ -106,7 +106,7 @@
     <!--end Promo Banner-->
 
     <!--Loyatly Sign In-->
-    <div class="loyalty-sign-in">
+    <div id="order-selection" class="loyalty-sign-in">
         <img class="chipotle-logo-loyalty" src="../imgs/chipotle-loyalty.png">
         <h2>JOIN CHIPOTLE REWARDS. UNLOCK FREE CHIPOTLE.</h2>
         <button>CREATE AN ACCOUNT</button>
@@ -118,42 +118,42 @@
     <!--Menu Options-->
     <div class="menu-content">
         <div class="menu-items">
-            <a href="#" class="menu-item">
+            <a href="./buildOrder.html" class="menu-item" onclick="selectOrderType('Burrito')">
                 <img src="../imgs/burrito.png">
                 <p>BURRITO</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=BurritoBowl" class="menu-item">
                 <img src="../imgs/burrito-bowl.png">
                 <p>BURRITO BOWL</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=LifeStyleBowl" class="menu-item">
                 <img src="../imgs/lifestyle-bowl.png">
                 <p>LIFESTYLE BOWL</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=Quesadilla" class="menu-item">
                 <img src="../imgs/quesadilla.png">
                 <p>QUESADILLA</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=Salad" class="menu-item">
                 <img src="../imgs/salad.jpg">
                 <p style="margin-top: 0px">SALAD</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=Tacos" class="menu-item">
                 <img src="../imgs/tacos.jpg">
                 <p>TACOS</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=SidesAndDrinks" class="menu-item">
                 <img src="../imgs/sides-drinks.jpg">
                 <p>SIDES & DRINKS</p>
                 <p class="order">ORDER &#x27A1;</p>
             </a>
-            <a href="#" class="menu-item">
+            <a href="/php/buildOrder.php?orderType=KidsMeal" class="menu-item">
                 <img src="../imgs/kids-meal.jpg">
                 <p>KIDS MEAL</p>
                 <p class="order">ORDER &#x27A1;</p>
@@ -167,43 +167,49 @@
         <div class="promo-1">
             <div class="promo-text">
                 <h1>WIN FREE CRYPTO, 1c GUAC, OR 1c QUESO</h1>
-                <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line 7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
+                <p>Celebrate National Avocado Day all week. Free crypto, 1¢ guac, and 1¢ Queso Blanco are on the line
+                    7/25-7/31. Play for a chance to win every day from 10 AM PST to 6 PM PST*.</p>
                 <button>PLAY NOW</button>
             </div>
             <div class="promo-img">
-                <video class="bottom-promo-video" autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/misc--pages/national-avocado-day-2022/NAD_SecondaryTout_BuyTheDip_DSK.mp4" ></video>
+                <video class="bottom-promo-video" autoplay="autoplay" muted="muted" loop="loop"
+                    src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/misc--pages/national-avocado-day-2022/NAD_SecondaryTout_BuyTheDip_DSK.mp4"></video>
             </div>
         </div>
 
         <div class="promo-2">
             <div class="promo-text">
                 <h1>OUR COMMITMENT TO LOCAL IS REAL</h1>
-                <p>We purchased over 35 million pounds of local produce from local farmers last year because we know fresh, real ingredients just taste better.</p>
+                <p>We purchased over 35 million pounds of local produce from local farmers last year because we know
+                    fresh, real ingredients just taste better.</p>
                 <button>PLAY NOW</button>
             </div>
             <div class="promo-img">
-                <video class="bottom-promo-video"autoplay="autoplay" muted="muted" loop="loop" src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu-items/fajitas/CHP_BrandCampaign_ST_VEG_DESKTOP.mp4" ></video>
+                <video class="bottom-promo-video" autoplay="autoplay" muted="muted" loop="loop"
+                    src="https://www.chipotle.com/content/dam/chipotle/global-site-design/en/menu-items/fajitas/CHP_BrandCampaign_ST_VEG_DESKTOP.mp4"></video>
             </div>
         </div>
     </div>
     <!-- End Bottom Page Promos -->
 
     <!--Crowd Pleasers-->
-    
+
     <div class="crowd-pleasers-container">
         <div class="crowd-pleasers-title">Crowd Pleasers</div>
         <div class="crowd-pleasers-content">
             <div class="crowd-pleasers">
                 <img src="../imgs/catering-title.jpg">
                 <p class="crowd-pleasers-title-content">CATERING</p>
-                <div class="catering-description">From 6 to 200 people &#8226; Starting at $8.25* / person Build Your Own &#8226; Burritos by the Box &#8226; Chips & Salsa </div>
+                <div class="catering-description">From 6 to 200 people &#8226; Starting at $8.25* / person Build Your
+                    Own &#8226; Burritos by the Box &#8226; Chips & Salsa </div>
                 <div class="crowd-pleasers-24-notice">Requires 24 hours notice</div>
                 <button class="crowd-pleasers-button">EXPLORE CATERING</button>
             </div>
             <div class="crowd-pleasers">
                 <img src="../imgs/group-ordering.jpg">
                 <p class="crowd-pleasers-title-content">GROUP ORDER</p>
-                <div class="catering-description">Invite up to 20 people &#8226; Normal menu pricing Full menu &#8226; Personalized meals &#8226; Organizer pays </div>
+                <div class="catering-description">Invite up to 20 people &#8226; Normal menu pricing Full menu &#8226;
+                    Personalized meals &#8226; Organizer pays </div>
                 <div class="crowd-pleasers-24-notice">Order and eat today</div>
                 <button class="crowd-pleasers-button">START ORDER NOW</button>
             </div>
@@ -259,11 +265,15 @@
 
     <script>
         function openNav() {
-          document.getElementById("mobile-nav-bar").style.display = "block";
+            document.getElementById("mobile-nav-bar").style.display = "block";
         }
-        
+
         function closeNav() {
-          document.getElementById("mobile-nav-bar").style.display = "none";
+            document.getElementById("mobile-nav-bar").style.display = "none";
+        }
+
+        function selectOrderType(orderType) {
+            sessionStorage.setItem("userOrderTypeSelection", orderType);
         }
 
         function openSignIn() {
@@ -274,8 +284,8 @@
             document.getElementById("sign-in").style.display = "none";
         }
 
-
         </script>
+
 
 </body>
 
